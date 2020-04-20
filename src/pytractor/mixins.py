@@ -88,6 +88,9 @@ class WebDriverMixin(object):
             result = self.execute_script(js_script, *args)
         return result
 
+    def wait_for_angular_enabled(self, enabled: bool = True):
+        self.ignore_synchronization = enabled
+
     def wait_for_angular(self):
         if self.ignore_synchronization:
             return
