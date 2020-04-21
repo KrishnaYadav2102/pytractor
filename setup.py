@@ -32,7 +32,7 @@ with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
 setup(
     name='pytractor-new',
 
-    version='0.1.4',
+    version='0.1.5',
 
     description='Selenium testing for Angular.js apps',
     long_description=long_description,
